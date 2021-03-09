@@ -8,7 +8,7 @@ body {
   font-family: 'Noto Serif JP', serif;
   color: #333;
   background-color: #fff;
-  max-width: 100%;
+  box-sizing: border-box;
 }
 
 a {
@@ -51,13 +51,13 @@ ul {
 ---------- */
 
 .header {
-  max-height: 120px;
+  height: 120px;
   width: 100%;
   margin-bottom: 30px;
   position: sticky;
   top: 0px;
   z-index: 1;
-  background-color: #FFF;
+  background-color: #fff;
 } 
 
 .logo {
@@ -87,6 +87,10 @@ ul {
   border-bottom: 1px solid #333;
 }
 
+.menu-content {
+  display: none;
+}
+
 /* ----------
 ----firstview----
 ---------- */
@@ -97,16 +101,18 @@ ul {
 
 .firstview img {
   display: block;
-  margin: 0 0 0 35%;
+  margin: 0 0 0 36%;
+  max-width: 100%;
 }
 
 .firstview-text {
   position: absolute;
   top: 40%;
-  left: 10%;
-  font-family: 'Great Vibes', cursive;
-  font-size: 35px;
+  left: 8%;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 28px;
   line-height: 50px;
+  animation: fadein 3s  iteration-count direction fill-mode;;
 }
 
 
@@ -235,6 +241,7 @@ ul {
 .contact {
   background-color: rgba(196, 196, 196, 12%);
   padding-bottom: 20px;
+  text-align: center;
 }
 
 .message {
@@ -244,43 +251,11 @@ ul {
   font-size: 0.9rem;
 }
 
-form {
-  width: 100%;
-  text-align: center;
-}
-
-input,
-textarea {
-  box-sizing: border-box;
-  border: 1px solid #999;
-  width: 45%;
-}
-
-input {
-  margin-bottom: 25px;
-  padding: 7px;
-}
-
-textarea {
-  vertical-align: top;
-  height: 150px;
-}
-
-.button{
-  width: 20%;
-  margin-top: 50px;
-  text-align: center;
-  padding: 10px px;
-  font-size: 15px;
-  background-color:#fff;
-  border: 1px solid #999;
-  border-radius: 2px;
-  outline: none;
-  cursor: pointer;
-}
-
-.button:hover {
-  opacity: 0.7;
+.email {
+  border: 1px solid #333;
+  width: 300px;
+  padding: 10px 20px;
+  margin: 0 auto;
 }
 
 /* ----------
@@ -400,6 +375,8 @@ tr li {
   display: block;
   padding: 10px;
 }
+
+
 
 
 
